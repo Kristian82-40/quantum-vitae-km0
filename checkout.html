@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Quantum Vitae Km 0</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .price {
+            font-size: 3em;
+            color: #764ba2;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .payment-methods {
+            display: grid;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .payment-option {
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .payment-option:hover {
+            border-color: #667eea;
+            background: #f8f9ff;
+            transform: translateY(-2px);
+        }
+        .payment-option h3 {
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .badge {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7em;
+            font-weight: normal;
+        }
+        .crypto-badge {
+            background: #f7931a;
+        }
+        .button {
+            background: #667eea;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .button:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        .iban-box {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-family: 'Courier New', monospace;
+        }
+        .iban-box strong {
+            display: block;
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        .instructions {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .qr-placeholder {
+            width: 200px;
+            height: 200px;
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            color: #999;
+        }
+        #stripe-element {
+            display: none;
+            margin-top: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Volver al inicio</a>
+    
+    <div class="container">
+        <h1>🌿 Plan Holístico Personalizado</h1>
+        <div class="price">€5.00</div>
+        <p style="color: #666; margin-bottom: 30px;">Elige tu método de pago preferido. Aceptamos CUALQUIER moneda del mundo.</p>
+        
+        <div class="payment-methods">
+            <!-- STRIPE: Tarjetas + Crypto + Bizum -->
+            <div class="payment-option" onclick="showStripe()">
+                <h3>
+                    💳 Tarjeta / Criptomonedas / Bizum
+                    <span class="badge">Instantáneo</span>
+                </h3>
+                <p class="instructions">
+                    Paga con tarjeta (Visa, Mastercard, Amex), criptomonedas (USDC, ETH, BTC) o Bizum.
+                </p>
+                <div id="stripe-element">
+                    <div id="payment-element"></div>
+                    <button class="button" id="submit-stripe">Pagar €5.00</button>
+                </div>
+            </div>
+
+            <!-- COINBASE: Más Cryptos -->
+            <div class="payment-option">
+                <h3>
+                    ₿ Todas las Criptomonedas
+                    <span class="badge crypto-badge">+100 coins</span>
+                </h3>
+                <p class="instructions">
+                    Bitcoin, Ethereum, Litecoin, Dogecoin y más de 100 criptomonedas.
+                </p>
+                <button class="button" onclick="payCoinbase()">Pagar con Crypto</button>
+            </div>
+
+            <!-- TRANSFERENCIA BANCARIA -->
+            <div class="payment-option">
+                <h3>
+                    🏦 Transferencia Bancaria
+                    <span class="badge">Openbank</span>
+                </h3>
+                <p class="instructions">
+                    Realiza una transferencia a nuestra cuenta. Procesamos tu pedido en 24h.
+                </p>
+                <div class="iban-box">
+                    <strong>IBAN Openbank:</strong>
+                    ES91 0073 0100 XXXX XXXX XXXX
+                    <br><br>
+                    <strong>Concepto:</strong> QV-TU_EMAIL
+                    <br><br>
+                    <small style="color: #999;">Reemplaza TU_EMAIL con tu email para identificarte</small>
+                </div>
+            </div>
+
+            <!-- EFECTIVO / QR INTERNACIONAL -->
+            <div class="payment-option">
+                <h3>
+                    💵 Efectivo (Cajero / Tienda)
+                    <span class="badge">PIX, CoDi, Multibanco</span>
+                </h3>
+                <p class="instructions">
+                    Genera un código QR para pagar en efectivo en tu país.
+                    <br>🇧🇷 Brasil (PIX) | 🇲🇽 México (CoDi/Oxxo) | 🇵🇹 Portugal (Multibanco)
+                </p>
+                <button class="button" onclick="generateCashCode()">Generar Código de Pago</button>
+                <div id="qr-code" style="display:none;">
+                    <div class="qr-placeholder">CÓDIGO QR AQUÍ</div>
+                    <p style="text-align: center; color: #666;">
+                        <strong>Ref:</strong> <span id="payment-ref"></span><br>
+                        Muestra este código en el cajero o tienda
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // STRIPE SETUP
+        let stripe, elements, paymentElement;
+        
+        async function showStripe() {
+            const stripeDiv = document.getElementById('stripe-element');
+            if (stripeDiv.style.display === 'block') {
+                stripeDiv.style.display = 'none';
+                return;
+            }
+            
+            stripeDiv.style.display = 'block';
+            
+            if (!stripe) {
+                // REEMPLAZA CON TU STRIPE PUBLISHABLE KEY
+                stripe = Stripe('pk_test_TU_KEY_AQUI');
+                
+                // Fetch client secret from your backend
+                // const response = await fetch('/create-payment-intent', { method: 'POST' });
+                // const { clientSecret } = await response.json();
+                
+                // Por ahora mostramos el elemento
+                elements = stripe.elements({
+                    mode: 'payment',
+                    amount: 500, // €5.00 en centavos
+                    currency: 'eur',
+                    payment_method_types: ['card', 'crypto', 'sepa_debit'],
+                });
+                
+                paymentElement = elements.create('payment');
+                paymentElement.mount('#payment-element');
+            }
+        }
+        
+        document.getElementById('submit-stripe')?.addEventListener('click', async () => {
+            // Aquí procesarías el pago con Stripe
+            alert('Stripe payment procesado. Conecta tu Stripe API key.');
+        });
+        
+        // COINBASE COMMERCE
+        function payCoinbase() {
+            // REEMPLAZA CON TU COINBASE COMMERCE CHARGE CODE
+            alert('Redirigiendo a Coinbase Commerce...\n\nConfigura tu Coinbase Commerce API y crea un charge.');
+            // window.location.href = 'https://commerce.coinbase.com/charges/TU_CHARGE_ID';
+        }
+        
+        // CASH / QR CODE GENERATION
+        function generateCashCode() {
+            const qrDiv = document.getElementById('qr-code');
+            const refSpan = document.getElementById('payment-ref');
+            
+            // Genera referencia única
+            const ref = 'QV-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+            refSpan.textContent = ref;
+            
+            qrDiv.style.display = 'block';
+            
+            // Aquí integrarías con PIX/CoDi/Multibanco APIs
+            alert('Código generado: ' + ref + '\n\nIntegra con Stripe Cash Payments o APIs locales para QR real.');
+        }
+    </script>
+</body>
+</html>

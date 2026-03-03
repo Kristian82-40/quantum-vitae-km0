@@ -1,0 +1,91 @@
+Subject: [Quantum Bio-Score] {{v_nombre}}, este es tu nivel de coherencia hoy
+
+Hola {{v_nombre}},
+
+Gracias por completar el Quantum Bio-Score.
+Aquí tienes tu foto sistémica de hoy.
+
+========================================
+TU QUANTUM BIO-SCORE GLOBAL
+========================================
+
+{{quantum_bio_score}} / 100
+
+Estás en fase: {{cluster_global}}
+
+========================================
+DETALLE DE TUS 4 DIMENSIONES
+========================================
+
+Energía: {{energia_score}} / 100
+- Cómo duermes, cómo te mueves, cómo recuperas
+
+Inflamación: {{inflamacion_score}} / 100
+- Lo que comes, los síntomas que tienes
+
+Estrés: {{estres_score}} / 100
+- Tu carga, tu presión, tu capacidad de soltar
+
+Coherencia KM0: {{coherencia_km0_score}} / 100
+- Tu conexión con lo cercano, lo vivo, lo lento
+
+========================================
+TU PERFIL HOY
+========================================
+
+Perfil: {{perfil_sintetico_label}}
+
+Lo que vemos:
+{{mensaje_clave}}
+
+========================================
+TRES ACCIONES PARA LOS PRÓXIMOS 7 DÍAS
+========================================
+
+1. BLO-QUEUE PANTALLAS
+   Elige una hora límite para cerrar screens antes de acostarte.
+   Esto empieza a resetear tu cortisol y mejora el sueño.
+
+2. REDUCE INFLAMATORIO
+   Por una semana, reduce a la mitad azucares visibles,
+   ultra-procesados y alcohol.
+   Observa cómo tu cuerpo responde.
+
+3. UN MICRO-RITUAL
+   5-10 minutos de lo que sea: caminar sin móvil, respirar,
+   escribir, mirar por la ventana.
+   Lo que importa es bajar revoluciones consciente.
+
+========================================
+SIGUIENTE PASO
+========================================
+
+Repite este quiz en 30 días y compara.
+Verás cómo tu Quantum Bio-Score se mueve si aplicas los cambios.
+
+Quiéres ir más profundo?
+Puedes acceder a un Informe Premium con:
+- Plan personalizado de 30 días por tu perfil
+- Recetas KM0 para reducir inflamación
+- Protocolo de rituales de coherencia
+- Checklist diario
+- Acceso a nuestra comunidad
+
+Más info: [LINK A LANDING]
+
+========================================
+IMPORTANTE
+========================================
+
+Quantum Bio-Score no sustituye atención profesional.
+Si tienes síntomas intensos o persistentes,
+consulta siempre con un profesional de salud.
+
+Este es un primer mapa. Tú eres el navegador.
+
+Un abrazo,
+Kristian
+Quantum Vitae KM0
+
+========================================
+P.D. ¿Preguntas? Responde este email.

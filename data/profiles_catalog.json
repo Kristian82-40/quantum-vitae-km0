@@ -1,0 +1,132 @@
+[
+  {
+    "id": "circadian",
+    "nombre_es": "Disfunción Circadiana",
+    "rango_min": 75,
+    "rango_max": 100,
+    "descripcion_fisiologica": "Desregulación del ritmo circadiano endógeno con alteración de los ciclos sueño-vigilia, disrupción del eje HPA nocturno y supresión de melatonina. Se manifiesta como insomnio de inicio o mantenimiento, fatiga diurna, dificultad de concentración matutina y alteración de la temperatura corporal basal. Está asociada a exposición crónica a luz azul nocturna, trabajo en turnos, jet lag social y alimentación fuera de la ventana circadiana óptima.",
+    "recomendaciones": {
+      "nutricion": "Cena ligera antes de las 19:30 con predominio de triptófano (pavo, huevo, plátano KM0) y magnesio (verduras de hoja verde, semillas de calabaza). Evitar cafeína tras las 14:00 y alcohol nocturno. Desayuno proteico antes de las 09:00 para anclar el ritmo cortisol-insulina.",
+      "cronobiologia": "Exposición a luz solar directa en los primeros 30 min tras despertar (sin gafas de sol) para sincronizar el reloj suprachiasmatico. Oscuridad total o gafas ámbar a partir de las 21:00. Fijar hora de despertar constante 7 días/semana como ancla circadiana principal.",
+      "ritmos_ambientales": "Temperatura ambiente nocturna entre 17–19°C para favorecer inicio de sueño. Reducir ruido y contaminación lumínica en dormitorio. Aprovechar el ritmo de mareas y luz natural mediterránea para estructurar la jornada.",
+      "gestion_estres": "Rutina de desaceleración nocturna: 20 min de lectura en papel, respiración 4-7-8 o yoga nidra. Evitar pantallas y trabajo cognitivo intenso en las 2h previas al sueño. Diario de gratitud vespertino para reducir rumiación nocturna."
+    }
+  },
+  {
+    "id": "silent_inflammation",
+    "nombre_es": "Inflamación Silente",
+    "rango_min": 45,
+    "rango_max": 74,
+    "descripcion_fisiologica": "Estado de inflamación sistémica de bajo grado con activación crónica de citoquinas pro-inflamatorias (IL-6, TNF-α, PCR-us elevada) sin síntomas agudos evidentes. Involucra disfunción del tejido adiposo visceral, permeabilidad intestinal aumentada y activación sostenida del sistema inmune innato. Está en la base fisiopatológica de la mayoría de enfermedades crónicas no transmisibles.",
+    "recomendaciones": {
+      "nutricion": "Dieta antiinflamatoria mediterránea estricta: aceite de oliva virgen extra, pescado azul 3×/semana (sardina, boquerón, caballa KM0), frutas del bosque, cúrcuma fresca con pimienta negra. Eliminar azúcares refinados, harinas blancas y grasas trans. Aumentar fibra prebiótica (alcachofa, puerro, cebolla) para modular microbiota.",
+      "cronobiologia": "Respetar el ritmo inflamatorio circadiano: los mediadores inflamatorios tienen su pico entre las 06:00–10:00, por lo que la actividad física moderada matutina puede ser antiinflamatoria. Ayuno nocturno de 12–14h para reducir insulina basal e IL-6.",
+      "ritmos_ambientales": "Ejercicio en entorno natural (playa, montaña) para reducción de cortisol. Contacto con tierra y agua de mar por su efecto antiinflamatorio documentado. Evitar contaminantes ambientales (tráfico, pesticidas) que activan NF-κB.",
+      "gestion_estres": "Práctica de meditación mindfulness 20 min/día (reduce PCR-us en estudios clínicos). Técnicas de coherencia cardíaca para modular el sistema nervioso autónomo. Priorizar relaciones sociales de calidad como moduladores antiinflamatorios epigenéticos."
+    }
+  },
+  {
+    "id": "metabolic",
+    "nombre_es": "Homeostasis Metabólica",
+    "rango_min": 0,
+    "rango_max": 44,
+    "descripcion_fisiologica": "Alteración de los mecanismos de regulación glucémica, lipídica y energética. Involucra resistencia periférica a insulina, disfunción mitocondrial, disregulación del eje leptina-ghrelina y acumulación de grasa visceral metabólicamente activa. Los biomarcadores típicos incluyen glucosa en ayunas >90 mg/dL, triglicéridos >130, HDL bajo y cintura abdominal elevada.",
+    "recomendaciones": {
+      "nutricion": "Priorizar carbohidratos de índice glucémico bajo y alta carga de fibra soluble (legumbres KM0, verduras de temporada, frutos secos). Proteína en cada comida (0.8–1.2g/kg/día) para control de saciedad. Restricción de fructosa libre y alcohol. Vinagre de manzana antes de comidas principales para reducir picos glucémicos.",
+      "cronobiologia": "Cargar el aporte calórico en la primera mitad del día (crono-nutrición). El metabolismo glucídico es un 50% más eficiente antes de las 15:00. Evitar carbohidratos refinados en la cena. Implementar protocolo 16:8 de alimentación restringida en el tiempo.",
+      "ritmos_ambientales": "Caminar 10–15 min después de cada comida principal para activar GLUT-4 muscular sin necesidad de insulina. Exposición solar regulada para síntesis de vitamina D (íntimamente ligada a sensibilidad insulínica). Temperatura fresca favorece activación del tejido adiposo pardo.",
+      "gestion_estres": "El estrés crónico eleva cortisol, que directamente antagoniza la insulina. Técnicas de reducción de cortisol: baños termales, natación en mar mediterráneo, desconexión digital vespertina. Sueño de calidad como regulador del eje ghrelina-leptina."
+    }
+  },
+  {
+    "id": "hpa_axis",
+    "nombre_es": "Eje HPA / Sobrecarga Adaptativa",
+    "rango_min": 50,
+    "rango_max": 85,
+    "descripcion_fisiologica": "Disfunción del eje hipotálamo-hipófisis-adrenal con producción desregulada de cortisol (hipercortisolemia funcional o insuficiencia adrenal relativa). Se traduce en fatiga persistente que no mejora con el descanso, hipersensibilidad sensorial, síndrome de crash post-esfuerzo y disregulación emocional. Frecuentemente coexiste con perfiles circadiano y neuro-inmune.",
+    "recomendaciones": {
+      "nutricion": "Vitamina C de alta biodisponibilidad (pimiento rojo KM0, kiwi, perejil fresco) como cofactor adrenal. Sal marina no refinada en cantidad moderada si hay hipotensión matutina. Evitar el ayuno prolongado que puede elevar cortisol en fase de agotamiento adrenal. B5 y B6 de fuentes alimentarias (legumbres, huevos, aguacate).",
+      "cronobiologia": "No saltarse el desayuno (activa el ritmo cortisol matutino de forma fisiológica). Siesta corta de 20 min entre 13:00–15:00 si hay fatiga sin comprometer sueño nocturno. Planificar tareas de alta demanda cognitiva en el pico energético individual (mañana en la mayoría).",
+      "ritmos_ambientales": "Inmersión en naturaleza mediterránea como regulador del tono adrenal (shinrin-yoku adaptado). Evitar sobreestimulación digital y ruido ambiental en periodos de recuperación. Ritmos de trabajo-descanso de 52/17 minutos para mantener el ciclo ultradiano.",
+      "gestion_estres": "Protocolo de límites y reducción de carga alostática: identificar y eliminar estresores crónicos evitables. Técnica de EFT (tapping) o EMDR para traumas acumulados. Priorizar actividades que activen el sistema parasimpático (música lenta, naturaleza, contacto social seguro)."
+    }
+  },
+  {
+    "id": "gut_functional",
+    "nombre_es": "Salud Digestiva Funcional",
+    "rango_min": 35,
+    "rango_max": 65,
+    "descripcion_fisiologica": "Disfunción del eje intestino-cerebro con alteración de la motilidad gastrointestinal, disbiosis intestinal, aumento de la permeabilidad de la barrera epitelial (leaky gut) y disregulación del sistema nervioso entérico. Se manifiesta como distensión postprandial, irregularidad en el tránsito, hipersensibilidad visceral, producción aumentada de lipopolisacáridos (LPS) y síntomas de conexión intestino-cerebro (ansiedad, niebla cognitiva).",
+    "recomendaciones": {
+      "nutricion": "Dieta rica en fermentados tradicionales (kéfir, yogur artesanal, miso, chucrut). Caldo de huesos KM0 para reparación de la mucosa intestinal. Evitar gluten en periodos de inflamación activa. Introducir prebióticos graduales (FOS, inulina de achicoria, almidón resistente) para alimentar bifidobacterias. Masticar 20–30 veces por bocado.",
+      "cronobiologia": "El microbioma tiene ritmo circadiano propio: consumir fermentados y fibra en las comidas principales del día. El peristaltismo es más activo entre 07:00–12:00. Respetar el reflejo gastrocólico matutino (desayuno dentro de la primera hora tras despertar).",
+      "ritmos_ambientales": "Contacto con microbioma ambiental diverso (jardines, huertos, playa) para aumentar la biodiversidad microbiana intestinal. Agua de manantial local con minerales. Reducir uso de antibióticos y antisépticos innecesarios que alteran el microbioma.",
+      "gestion_estres": "El eje intestino-cerebro es bidireccional: el estrés agudo paraliza la digestión. Respiración diafragmática lenta antes de las comidas (activa nervio vago). Evitar comer en estado de activación simpática alta. Técnicas de conexión con el cuerpo (body scan, tai chi) para regular el sistema nervioso entérico."
+    }
+  },
+  {
+    "id": "neuro_immune",
+    "nombre_es": "Resiliencia Neuroinmune",
+    "rango_min": 60,
+    "rango_max": 100,
+    "descripcion_fisiologica": "Compromiso de la interfase entre el sistema nervioso central y el sistema inmune adaptativo, con activación microglial sostenida, neuroinmunidad de bajo grado y disfunción de la barrera hematoencefálica. Se asocia a hipersensibilidad al estrés, respuesta inmune exagerada ante agentes ambientales, fatiga neurológica, y vulnerabilidad aumentada ante infecciones virales recurrentes. El eje nervio vago juega un papel central en la regulación de este perfil.",
+    "recomendaciones": {
+      "nutricion": "Ácidos grasos omega-3 DHA y EPA (sardina, caballa, nueces) como moduladores de la neuroinflamación. Polifenoles neuroprotectores (resveratrol de uva tinta KM0, quercetina de cebolla, EGCG del té verde). Vitamina D3 + K2 para regulación inmune. Reducir lectinas y antinutrientes en fases de exacerbación. Magnesio glicinato para la función GABAérgica.",
+      "cronobiologia": "El sistema inmune tiene ritmo circadiano marcado: la respuesta inflamatoria es mayor en la primera mitad del día. Programar actividad física moderada por la mañana para aprovechar el pico inmune. Sueño reparador 7–9h como ventana de consolidación inmunológica y reparación de mielina.",
+      "ritmos_ambientales": "Baños en mar mediterráneo (haloterapia natural) con efecto inmunomodulador documentado. Exposición a sol sin filtro solar en exposiciones cortas (15 min) para síntesis de vitamina D. Contacto con biodiversidad ambiental como entrenamiento del sistema inmune adaptativo.",
+      "gestion_estres": "Estimulación del nervio vago: canto, gargarismos, respiración fría nasal, inmersión de cara en agua fría. Reducción de carga inflamatoria total (ambiental, psicosocial, alimentaria). Técnicas de regulación del sistema nervioso: NSDR (non-sleep deep rest), yoga restaurativo."
+    }
+  },
+  {
+    "id": "brain_fog",
+    "nombre_es": "Niebla Cognitiva / Neuroplasticidad",
+    "rango_min": 20,
+    "rango_max": 50,
+    "descripcion_fisiologica": "Disfunción cognitiva funcional con reducción de la claridad mental, velocidad de procesamiento, memoria de trabajo y flexibilidad cognitiva. Fisiopatológicamente involucra reducción de BDNF (factor neurotrófico derivado del cerebro), hipoperfusión cerebral, disfunción mitocondrial neuronal, carga inflamatoria cerebral y alteración del metabolismo glucídico cerebral. No implica daño estructural sino disfunción funcional reversible.",
+    "recomendaciones": {
+      "nutricion": "Grasas saludables para síntesis de mielina (aguacate, aceite de coco virgen, huevo KM0 con yema). Lion's mane (melena de león) y reishi para estimulación del NGF y BDNF. Colina alimentaria (huevos, hígado, soja no procesada) para síntesis de acetilcolina. Reducir carga glucémica que genera fluctuaciones energéticas cerebrales.",
+      "cronobiologia": "El BDNF alcanza su pico tras el ejercicio matutino: programar entrenamiento cognitivo (aprendizaje, lectura profunda, resolución de problemas) en las 2–4h posteriores al ejercicio. Respetar el ritmo ultradiano de 90 min de foco/15 min de descanso. No sacrificar sueño REM (consolida memoria declarativa).",
+      "ritmos_ambientales": "Exposición a entornos de alta biodiversidad (montaña, bosque mediterráneo) que estimulan la red neuronal por defecto. Luz natural polarizada de la mañana como modulador de la función retino-hipotalámica. Reducir contaminación acústica que genera carga cognitiva involuntaria.",
+      "gestion_estres": "Meditación de atención focalizada (concentración en un objeto) para fortalecer la red de control ejecutivo. Journaling estructurado para externalizar la carga cognitiva. Técnica Pomodoro adaptada (25/5 min) para gestionar la fatiga atencional. Evitar multitarea crónica que fragmenta la red frontoparietal."
+    }
+  },
+  {
+    "id": "detox_load",
+    "nombre_es": "Carga Tóxica / Detoxificación",
+    "rango_min": 30,
+    "rango_max": 80,
+    "descripcion_fisiologica": "Refleja la capacidad del organismo para biotransformar y eliminar compuestos exógenos y endógenos (xenobióticos, metabolitos hormonales, subproductos metabólicos). Un score elevado indica saturación de las vías hepáticas de fase I/II (CYP450, glutatión-S-transferasa), compromiso del sistema linfático y acumulación de carga alostática tóxica. Se manifiesta como hipersensibilidad química, cefaleas recurrentes, fatiga matutina persistente y disbiosis secundaria.",
+    "recomendaciones": {
+      "nutricion": "Crucíferas (brócoli, col rizada KM0) para inducir enzimas fase II; alcachofa y cardo mariano como hepatoprotectores; reducción de azúcares refinados y grasas trans; hidratación >2L/día con agua de mineralización débil; limitar alcohol y ultraprocesados durante ciclos de 21 días.",
+      "cronobiologia": "Desayuno antes de las 09:00 con aporte proteico (huevo, legumbre) para activar el metabolismo hepático matutino; ventana de alimentación 8–10h (ayuno nocturno de 14–16h) para optimizar autofagia hepática; evitar comidas copiosas tras las 20:00.",
+      "ritmos_ambientales": "Exposición solar matutina (07:feat: Add complete 10-profile catalog in JSON format00–09:00) para activar síntesis de vitamina D y regulación del ritmo circadiano hepático; reducción de exposición a plásticos y disruptores endocrinos del entorno; contacto con entorno natural mediterráneo (baños de bosque, playa).",
+      "gestion_estres": "Técnicas de sudoración moderada (sauna suave, ejercicio aeróbico 30 min/día) para apoyar eliminación dérmica; mindfulness corporal con escaneo de sensaciones; priorizar sueño de 7–9h para que el drenaje glinfático cerebral opere correctamente."
+    }
+  },
+  {
+    "id": "oxidative_aging",
+    "nombre_es": "Longevidad Oxidativa",
+    "rango_min": 55,
+    "rango_max": 100,
+    "descripcion_fisiologica": "Mide el balance entre producción de especies reactivas de oxígeno (ROS) y la capacidad antioxidante endógena (SOD, catalasa, glutatión peroxidasa). Scores altos indican estrés oxidativo sostenido con daño mitocondrial progresivo, acortamiento telomérico acelerado, glicosilación proteica (AGEs) y activación de vías pro-inflamatorias crónicas (NF-κB). Frecuentemente asociado a exposición crónica a radiación UV, contaminación ambiental, dieta hipercalórica y sedentarismo.",
+    "recomendaciones": {
+      "nutricion": "Polifenoles de alta biodisponibilidad: aceite de oliva virgen extra DOP (oleocantal), tomate KM0 madurado en vid (licopeno), granada, arándanos silvestres; especias antioxidantes (cúrcuma con pimienta negra, romero fresco); reducir carnes procesadas y azúcares; incrementar omega-3 de fuentes locales (sardina, caballa, nueces).",
+      "cronobiologia": "Consumo de antioxidantes dietéticos preferentemente en la ventana 12:00–19:00, coincidiendo con el pico de actividad enzimática digestiva; respetar el sueño profundo (22:30–02:00) como ventana de reparación celular máxima y pico de GH; evitar luz azul nocturna que suprime melatonina (antioxidante endógeno principal).",
+      "ritmos_ambientales": "Ejercicio físico moderado al amanecer (zona 2 cardíaca) para estimular biogénesis mitocondrial sin generar estrés oxidativo excesivo; contacto con tierra descalzo (grounding/earthing) para neutralización de ROS; reducir exposición a campos electromagnéticos de alta intensidad durante el sueño.",
+      "gestion_estres": "Coherencia cardíaca (5 respiraciones/min, 5 min × 3 veces/día) para modular el SNA y reducir cortisol crónico; práctica de meditación contemplativa o yoga suave para activar vía Nrf2 (regulación antioxidante endógena); evitar el sobreentrenamiento como fuente de ROS musculares."
+    }
+  },
+  {
+    "id": "hormonal_balance",
+    "nombre_es": "Equilibrio Hormonal",
+    "rango_min": 25,
+    "rango_max": 75,
+    "descripcion_fisiologica": "Evalúa la homeostasis del eje endocrino global: interacciones entre eje HPG (hipotálamo-hipófisis-gónadas), tiroides, insulina/IGF-1 y cortisol. Un score elevado refleja desregulación hormonal multisistémica con disrupción del ciclo menstrual o andrógenos, resistencia periférica a insulina, hipotiroidismo subclínico o hipercortisolemia funcional. El entorno mediterráneo ofrece recursos únicos para la resintonización hormonal natural.",
+    "recomendaciones": {
+      "nutricion": "Yodo y selenio de fuentes locales (algas, mariscos, frutos secos); zinc biodisponible (semillas de calabaza, ostras) para soporte de testosterona y función tiroidea; fitoestrógenos moderados (lentejas, semillas de lino molidas) para modulación estrogénica; eliminar disruptores endocrinos dietéticos; consumo adecuado de colesterol HDL como precursor hormonal.",
+      "cronobiologia": "Respetar el biorritmo de cortisol (pico 06:00–08:00, valle 22:00) sincronizando actividades de alta demanda cognitiva en la mañana; adaptar carga de ejercicio y alimentación a las 4 fases del ciclo menstrual en mujeres (sincrobiología femenina); exposición a luz natural antes de las 08:00 para anclar el eje HPA.",
+      "ritmos_ambientales": "Contacto con entorno natural para reducir xenoestrógenos ambientales; temperatura ambiente nocturna fresca (17–19°C) para optimizar producción de testosterona y melatonina; exposición a aromas naturales (lavanda, bergamota, romero) por su efecto modulador sobre el sistema límbico-endocrino.",
+      "gestion_estres": "Reducir estrés crónico como principal disruptor hormonal (cortisol elevado suprime FSH/LH y T3); adaptógenos (ashwagandha, rhodiola) bajo supervisión; práctica de respiración diafragmática para activar nervio vago; establecer rutinas de sueño estrictas para proteger el pulso nocturno de GH y LH."
+    }
+  }
+]
